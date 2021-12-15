@@ -1,0 +1,555 @@
+/* CSS Reset */
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.container{
+    max-width: 1024px;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+:root{
+    --secondary-color: rgb(129, 129, 129);
+    --menu-hover-color: black;
+}
+
+/* Header Section */
+        header{
+        position: relative;
+        height: 24rem;
+        }
+        header::before {
+            content: "";
+            background: url('../img/assets/background.avif') no-repeat center center / cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+        }
+
+        /* Navigation Menus */
+        #navbar{
+            display: flex;
+            justify-content: space-between;
+            padding: 26px 0px;
+        }
+        #navbar a{
+            text-decoration: none;
+            color: white;
+            padding: 4px 0px;
+        }
+        #navbar ul{
+            display: flex;
+            margin: 0px;
+        }
+        #navbar ul li{
+            list-style: none;
+            margin-left: 26px;
+        }
+        .download-app{
+            display: flex;
+            align-items: center;
+            font-size: .85rem;
+        }
+        .download-app img{
+            width: 11px;
+            display: block;
+            height: 100%;
+            margin-right: 4px;
+        }
+        .download-app span{
+            font-size: .8rem;
+        }
+
+        /* Title and Search Box */
+        #home-title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 100px;
+            overflow: hidden;
+        }
+        #title-img{
+            display: block;
+            width: 250px;
+            height: 100%;
+        }
+        #home-title h1{
+            color: white;
+            text-align: center;
+        }
+        #search{
+            display: flex;
+            justify-content: center;
+            width: 94%;
+        }
+        .location{
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 15px 7px;
+            border-radius: 10px 0px 0px 10px;
+        }
+        .location span{
+            color: rgb(84, 84, 84);
+            font-size: .8rem;
+            white-space: nowrap;
+        }
+        .location img{
+            display: block;
+            width: 20px;
+            height: 100%;
+            margin-right: 10px;
+        }
+        #location-down{
+            width: 12px;
+            height: 62%;
+            margin: 0px 10px;
+            cursor: pointer;
+        }
+        .search{
+            display: flex;
+            flex-grow: 5;
+            max-width: 30rem;
+            align-items: center;
+            background-color: white;
+            padding: 12px 7px;
+            border-radius: 0px 10px 10px 0px;
+        }
+        .search img{
+            display: block;
+            width: 16px;
+            height: 100%;
+            opacity: 62%;
+        }
+        .search label{
+            margin-right: 10px;
+
+        }
+        .search input{
+            color: rgb(84, 84, 84);
+            outline: none;
+            border: none;
+            width: 100%;
+        }
+
+/* Zomato Front Section */
+        #front{
+            display: flex;
+            margin-top: 36px;
+        }
+        .front-box{
+            margin: 0px .3rem;
+            transition: 250ms;
+        }
+        .front-box:hover{
+            transform: scale(1.05);
+        }
+        .front-box img{
+            display: block;
+            width: 100%;
+            height: 82%;
+            border-radius: 13px;
+            cursor: pointer;
+        }
+        .front-box span{
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 16px;
+            position: relative;
+            top: -44px;
+            border-radius: 0px 0px 13px 13px;
+            background-color: white;
+            color: black;
+            border: 1px solid #d9d9d9;
+            cursor: pointer;
+        }
+
+/* Collection Section */
+        #collection{
+            
+        }
+        section#colleciton h2{
+            margin: 0px;
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+        .collection-title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .collection-title p{
+            display: inline;
+            margin-bottom: 26px;
+        }
+        .collection-title a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: rgb(255, 85, 85);
+        }
+        .collection-title a:hover{
+            color: rgb(255, 0, 0);
+        }
+        .collection-title span{
+
+        }
+        .collection-title img{
+            width: 13px;
+            height: 100%;
+            margin-left: 5px;
+            transform: rotate(270deg);
+        }
+        .collection-aria{
+            display: flex;
+        }
+        .collection-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            position: relative;
+            height: 19rem;
+            color: white;
+            width: 26%;
+            margin: 0px 5px;
+            border-radius: 10px;
+            background-image: linear-gradient(transparent, #38181800, #000000);
+            cursor: pointer;
+        }
+        #collection-box-1::before{
+            content: "";
+            background: url('../img/collections/newly\ opened.avif') center center / cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            border-radius: 10px;
+        }
+        #collection-box-2::before{
+            content: "";
+            background: url('../img/collections/tranding.avif') center center / cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            border-radius: 10px;
+        }
+        #collection-box-3::before{
+            content: "";
+            background: url('../img/collections/ncr.avif') center center / cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            border-radius: 10px;
+        }
+        #collection-box-4::before{
+            content: "";
+            background: url('../img/collections/great\ cafes.avif') center center / cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            border-radius: 10px;
+        }
+        .collection-box span{
+            padding: 0px 12px;
+            font-weight: bold;
+        }
+        .collection-box-title{
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            font-size: .8rem;
+        }
+        .collection-box-title p{
+            margin: 0px;
+            margin-right: 5px;
+        }
+        .collection-box-title img{
+            width: 10px;
+            transform: rotate(270deg);
+            filter: invert(1);
+        }
+
+/* Popular localities in and around Delhi NCR */
+        #popular-localities{
+
+        }
+        #popular-localities h2{
+            text-align: center;
+            font-size: 2rem;
+            margin: 100px 0px 40px 0px;
+        }
+        .popular-box-container{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 13px;
+        }
+        .popular-box{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-grow: 5;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            width: 24%;
+            padding: 24px 20px;
+            margin: 0px 13px 20px 0px;
+            cursor: pointer;
+        }
+        .popular-box:hover{
+            box-shadow: rgba(28 28 28 / 8%) 0px 4px 8px;
+        }
+        .popular-box img{
+            width: 12px;
+        }
+        .popular-title{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+/* Get the Zomato App */
+        #zomato-app{
+            background-image: linear-gradient(
+            180deg, rgb(255, 251, 247), rgb(255 253 251));
+            margin-top: 80px;
+        }
+        .zomato-app-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 30px;
+        }
+        .zomato-app-box span{
+            
+        }
+        .screenshot{
+            margin-right: 2.5rem;
+        }
+        .screenshot img{
+            width: 250px;
+        }
+        .app-share-box{
+            margin-top: -38px;
+        }
+        .app-share-box h1{
+            font-size: 2.4rem;
+        }
+        .app-share-box p{
+
+        }
+        .email-phone{
+
+        }
+        .play-store{
+            
+        }
+        .play-store img{
+            width: 8rem;
+            margin: 22px 0px;
+            margin-right: 13px;
+            cursor: pointer;
+        }
+        .email-radio{
+            margin: 17px 0px;
+        }
+        .email-radio input, label{
+            cursor: pointer;
+        }
+        input.fill {
+            width: 15rem;
+            height: 2.3rem;
+            padding: 0.2rem 1rem;
+            font-size: 1rem;
+            border: 1px solid #ababab;
+            border-radius: 0.3rem;
+            margin-bottom: 30px;
+            margin-right: 2px;
+        }
+/* Explore other options for you here */
+        #explore{
+            margin-top: 100px;
+        }
+        #explore h2{
+            font-size: 1.6rem;
+            margin-bottom: 25px;
+        }
+        #explore h3{
+            font-size: 1.3rem;
+            color: rgb(44, 44, 44);
+            margin: 0px;
+        }
+        .explore-items{
+            margin-bottom: 100px;
+        }
+        .explore-items ul{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0px;
+        }
+        .explore-items ul li{
+            list-style: none;
+            margin-bottom: .35rem;
+        }
+        .explore-items ul li a{
+            text-decoration: none;
+            color: var(--secondary-color);
+            margin-right: 8px;
+            font-size: .9rem;
+        }
+        .explore-items ul li a:hover{
+            color: var(--menu-hover-color);
+        }
+        .explore-items ul li span{
+            margin-right: 8px;
+            position: relative;
+            font-size: 1.2rem;
+            font-weight: bold;
+            top: -4px;
+            color: #828282;
+        }
+        .restaurant{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            row-gap: 1.2rem;
+            column-gap: 1rem;
+            margin-top: 21px;
+            margin-bottom: 100px;
+        }
+        .restaurant a{
+            text-decoration: none;
+            font-size: .85rem;
+            color: var(--secondary-color);
+        }
+        .restaurant a:hover{
+            color: var(--menu-hover-color);
+        }
+
+/* Footer Section */
+        footer{
+            background: rgb(248, 248, 248);
+        }
+        #footer-aria{
+            margin: auto;
+        }
+    /* Country Section */
+        .country{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 48px 0px 33px 0px;
+        }
+        .count-img1{
+            filter: invert(1);
+            width: 125px;
+        }
+        .flag-container {
+            display: flex;
+        }
+        .flag{
+            display: flex;
+            align-items: center;
+            padding: 7px 7px;
+            border: 1px solid #bfbfbf;
+            border-radius: 6px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .count-img2{
+            width: 20px;
+            margin-right: 10px;
+        }
+        .count-img3{
+            width: 10px;
+            height: 100%;
+            margin-left: 6px;
+            transform: rotate(90deg);
+        }
+    /* Footer Links */
+        .footer-links{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+        .footer-links span{
+            display: block;
+            letter-spacing: 1px;
+            font-size: .8rem;
+            margin-bottom: 8px;
+        }
+        .footer-menus a{
+            display: block;
+            text-decoration: none;
+            font-size: .8rem;
+            margin-bottom: 8px;
+            color: var(--secondary-color);
+        }
+        .footer-menus a:hover{
+            color: var(--menu-hover-color);
+        }
+        .footer-menus-child{
+            margin-top: 25px;
+        }
+        .social-links{
+            
+        }
+        .social-icon-container {
+            display: flex;
+        }
+        .social-icon {
+            width: 12px;
+            background-color: black;
+            margin: 4px;
+            padding: 5px;
+            border-radius: 30rem;
+            cursor: pointer;
+        }
+        .social-icon img {
+            display: block;
+            filter: invert(1);
+        }
+        .social-share{
+            margin-top: 16px;
+        }
+        .social-share img{
+            width: 8rem;
+            margin: 3px 0px;
+            cursor: pointer;
+        }
+    /* Footer Copyright Section */
+        .copyright{
+            font-size: .8rem;
+            padding: 12px 0px;
+            color: var(--secondary-color);
+            border-top: 1px solid var(--secondary-color);
+            margin-top: 48px;
+            padding-top: 22px;
+            padding-bottom: 32px;
+        }
+
+/* Utility Classes */
+input{
+    outline: none;
+}
+button.btn {
+    padding: 0.81rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    color: white;
+    background-color: rgb(239, 79, 95);
+    cursor: pointer;
+}
+button.btn:hover, button.btn:active {
+    background-color: rgb(224, 53, 70);
+}
+label {
+    margin-right: 40px;
+}

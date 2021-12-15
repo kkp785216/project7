@@ -1,0 +1,71 @@
+@media (max-width: 900px) {
+    /* Header */
+    #navbar{
+        width: 97%;
+    }
+    /* Footer */
+    #footer-aria{
+        width: 97%;
+    }
+}
+
+@media (max-width: 768px){
+    /* Frontend */
+    .front-box span{
+        font-size: .8rem;
+    }
+    .zomato-app-box{
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Header */
+    #navbar{
+        visibility: hidden;
+    }
+    #home-title h1 {
+        font-size: 1.3rem;
+    }
+    /* Collection */
+    .collection-aria {
+        flex-wrap: wrap;
+    }
+    .collection-box {
+        width: 47%;
+        margin: auto !important;
+        margin-bottom: 12px !important;
+    }
+    .collection-title p {
+        font-size: .8rem;
+    }
+    .collection-title span {
+        font-size: .8rem;
+    }
+    /* Front */
+    #front {
+        flex-wrap: wrap;
+    }
+    .front-box {
+        width: 47%;
+        margin: auto;
+    }
+    /* Popular Locations */
+    .restaurant {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* Footer */
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+    }
+    .flag-container {
+        flex-wrap: wrap;
+    }
+    .flag {
+        max-width: 95px;
+        flex-grow: 5;
+        margin-bottom: 6px;
+    }
+}
